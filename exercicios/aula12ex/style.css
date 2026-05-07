@@ -1,0 +1,35 @@
+body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(84, 127, 245);
+            text-align: center;
+        }
+
+        h1 {
+            color: white;
+            margin-top: 50px;
+        }
+
+        section {
+            background-color: white;
+            width: 350px;
+            height: 350px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.349);
+        }
+
+        #img {
+            background-image: url('fotomanha.png');
+            background-size: cover;
+            width: 250px;
+            height: 250px;
+            margin: 20px auto;
+            border-radius: 50%;
+
+        }
+
+        footer{
+            color: white;
+            font-size: 1.2em;
+        }

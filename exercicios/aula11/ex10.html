@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        #txtvel {
+            width: 100px;
+            padding: 5px;
+            margin-right: 10px;
+        }
+        #button {
+            padding: 5px 10px;
+            margin-top: 20px;
+        }
+        #res {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Medidor de velocidade</h1>
+    <p>Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> km/h</p>
+    <input id="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+    
+    <script>
+        function verificar() {
+            var vel = Number(document.getElementById('txtvel').value)
+            var res = document.getElementById('res')
+            res.innerHTML = `<p>A velocidade do seu carro é <strong>${vel}</stron   g> km/h.</p>`
+            if (vel > 60) {
+                res.innerHTML += `<p><strong>Você ultrapassou a velocidade permitida. Multado!</strong></p>`
+            } else {
+                res.innerHTML += `<p>Velocidade permitida. Dirija com segurança!</p>`
+            }
+        }
+    </script>
+</body>
+</html>
