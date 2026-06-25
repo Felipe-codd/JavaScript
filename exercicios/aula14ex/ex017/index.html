@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Super Contador</title>
+    <title>Tabuada</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Vamos Contar!</h1>
+        <h1>Tabuada</h1>
     </header>
     <section>   
         <div id="dados">
-            <p>Inicio: <input type="number" name="txtn" id="txti"></p>
-            <p>Final: <input type="number" name="txtf" id="txtf" ></p>
-            <p>Passo: <input type="number" name="txtp" id="txtp" ></p>
-            <p><input type="button" value="Contar" id="button" onclick="contar()"></p>
+            <p>Digite um número: <input type="number" id="txtn"></p>
+            <input type="button" value="Gerar Tabuada" id="button" onclick="gerarTabuada()">
         </div>
 
-        <div id="res"> 
-            Preparando contagem...
+        <div> 
+            <select name="tabuada" id="seltab" size="10">
+                <option value="0">Digite um número</option>
+            </select>
         </div>
     </section>
 
